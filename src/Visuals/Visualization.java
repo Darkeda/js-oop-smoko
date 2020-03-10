@@ -1,12 +1,12 @@
 package Visuals;
 
-import javax.swing.*;
-
 public class Visualization {
 
     public static void main(String[] args) {
 
-        GameBoardPanel  board = new GameBoardPanel();
+       SnakeFrame frame = new SnakeFrame();
+       frame.setVisible(true);
+
 
     }
 }

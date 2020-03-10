@@ -1,12 +1,13 @@
 package Visuals;
 
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import static Visuals.GameBoardPanel.*;
 
 
-public class KeyBoardProxy implements KeyListener {
+public class KeyBoardProxy extends KeyAdapter {
 
 
 
@@ -21,6 +22,7 @@ public class KeyBoardProxy implements KeyListener {
         int keyCode = e.getKeyCode();
 
         if ((keyCode == KeyEvent.VK_LEFT) && (!rightArrow)) {
+
             leftArrow = true;
             upArrow = false;
             downArrow = false;
@@ -45,6 +47,8 @@ public class KeyBoardProxy implements KeyListener {
             rightArrow = false;
 
         }
+
+
 
 
     }
